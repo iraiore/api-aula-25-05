@@ -39,7 +39,7 @@ export class App {
       next();
     });
   }
-
+  
   private routes(): void {
     initRoutes(this.app);
   }

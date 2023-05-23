@@ -5,8 +5,8 @@ import { Despesa } from './despesa.entity';
 export class DespesaController {
   public async list(req: Request, res: Response) {
 
-    const despesas = await  await AppDataSource.manager.find(Despesa)
+    const despesa = await  await AppDataSource.manager.find(Despesa)
 
-    res.status(200).json({ dados: despesas });
+    res.status(200).json({ dados: despesa });
   }
 }
