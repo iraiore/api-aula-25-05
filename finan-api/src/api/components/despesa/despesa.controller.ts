@@ -22,6 +22,8 @@ export class DespesaController {
     desp.data = data;
     desp.valor = valor;
 
+    
+
     const _despesa = await AppDataSource.manager.save(desp);
 
     return res.status(201).json(_despesa);
